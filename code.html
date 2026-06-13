@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FitNexus - Envío Exitoso</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #090D16;
+      color: #dde4dd;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-card {
+      background: rgba(18, 24, 38, 0.8);
+      backdrop-filter: blur(12px);
+      border: 1px solid #1E293B;
+    }
+
+    .success-glow {
+      box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.3);
+    }
+
+    @keyframes scale-in {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes checkmark-draw {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .animate-scale-in {
+      animation: scale-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .progress-bar-fill {
+      width: 0%;
+      animation: progress-load 2s ease-in-out forwards;
+    }
+
+    @keyframes progress-load {
+      to { width: 100%; }
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#0e1511",
+            "on-tertiary-container": "#711419",
+            "on-secondary-fixed-variant": "#783200",
+            "error": "#ffb4ab",
+            "surface-container-low": "#161d19",
+            "tertiary": "#ffb3af",
+            "on-surface-variant": "#bbcabf",
+            "on-primary-fixed-variant": "#005236",
+            "on-tertiary-fixed-variant": "#842225",
+            "surface-tint": "#4edea3",
+            "surface-dim": "#0e1511",
+            "on-tertiary-fixed": "#410005",
+            "on-tertiary": "#650911",
+            "on-primary": "#003824",
+            "on-secondary-container": "#4a1c00",
+            "primary-fixed-dim": "#4edea3",
+            "on-error-container": "#ffdad6",
+            "inverse-surface": "#dde4dd",
+            "surface-container-high": "#242c27",
+            "surface-container-highest": "#2f3632",
+            "secondary": "#ffb690",
+            "secondary-container": "#ec6a06",
+            "on-primary-fixed": "#002113",
+            "on-error": "#690005",
+            "surface-bright": "#343b36",
+            "primary": "#4edea3",
+            "outline-variant": "#3c4a42",
+            "tertiary-container": "#fc7c78",
+            "tertiary-fixed": "#ffdad7",
+            "inverse-primary": "#006c49",
+            "on-primary-container": "#00422b",
+            "secondary-fixed-dim": "#ffb690",
+            "outline": "#86948a",
+            "on-background": "#dde4dd",
+            "primary-fixed": "#6ffbbe",
+            "on-secondary": "#552100",
+            "background": "#0e1511",
+            "secondary-fixed": "#ffdbca",
+            "error-container": "#93000a",
+            "primary-container": "#10b981",
+            "surface-container-lowest": "#09100c",
+            "on-surface": "#dde4dd",
+            "tertiary-fixed-dim": "#ffb3af",
+            "on-secondary-fixed": "#341100",
+            "inverse-on-surface": "#2b322d",
+            "surface-container": "#1a211d",
+            "surface-variant": "#2f3632"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "container-max": "1280px",
+            "margin-desktop": "48px",
+            "gutter": "24px",
+            "margin-mobile": "16px",
+            "stack-sm": "12px",
+            "stack-md": "24px",
+            "base": "8px",
+            "stack-lg": "48px"
+          },
+          "fontFamily": {
+            "label-sm": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "headline-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-xl": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-md": ["Inter"]
+          },
+          "fontSize": {
+            "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary/30">
+<!-- Main Background Layer -->
+<div class="fixed inset-0 z-0">
+
+</div>
+<!-- Top Bar (Minimal Brand Anchor) -->
+<header class="w-full top-0 sticky z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">FitNexus</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">notifications</span>
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold text-xs">AR</div>
+</div>
+</header>
+<main class="relative z-10 min-h-[calc(100vh-64px)] flex items-center justify-center px-margin-mobile">
+<!-- Success Modal/Card -->
+<div class="glass-card w-full max-w-lg rounded-xl p-stack-lg flex flex-col items-center text-center animate-scale-in success-glow">
+<!-- Animated Checkmark Circle -->
+<div class="relative w-24 h-24 mb-stack-md">
+<div class="absolute inset-0 rounded-full border-4 border-primary/20 scale-110"></div>
+<div class="w-full h-full rounded-full bg-primary-container/20 flex items-center justify-center">
+<svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" style="stroke-dasharray: 50; stroke-dashoffset: 50; animation: checkmark-draw 0.6s ease-out forwards 0.3s;"></path>
+</svg>
+</div>
+</div>
+<!-- Success Text Content -->
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">¡Éxito!</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-sm mb-stack-lg">
+        La rutina ha sido enviada al móvil de <span class="text-primary font-bold">Sofia Martinez</span>.
+      </p>
+<!-- Client Quick Info Card (Bento Style) -->
+<div class="w-full bg-surface-container-highest/50 rounded-lg p-4 mb-stack-lg flex items-center gap-4 text-left border border-outline-variant">
+<img alt="Sofia Martinez" class="w-12 h-12 rounded-full border-2 border-primary" data-alt="A professional close-up headshot of a female fitness enthusiast in a high-tech gym setting. She is wearing sleek black athletic gear. The background features blurred neon green gym equipment and soft ambient dark lighting. The mood is energetic, focused, and professional, perfectly aligning with a high-performance luxury fitness application brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxojVoK5ceVaaFww4S-9kBZltlxYKLSVUcWcsUqQf-oPLipGjwLtP0Pxw3fEwctoBGzyQve-2-fH-P4N6KIwMr_rbUNRAO3oO8CKDc_2AwbDZw6_PJyyhSzg0_I6MufMirX8ffpoppZcVsRrPhPxc9lxGeMAyXxEssMx3tK5J_27JO_LYgXo5jQfDH0158y9xfsILjmsIaq9qDVSVpXETEKyTsAKaXRYvEGdu3uOjtKEORezIc5ZCzeBUIDMqjqaRplH1F2PmEPfk"/>
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface">Sofia Martinez</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Plan de Hipertrofia A1 • Enviado ahora</p>
+</div>
+<div class="material-symbols-outlined text-primary" data-weight="fill">smartphone</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col md:flex-row gap-4 w-full">
+<button class="flex-1 bg-primary text-on-primary-container font-label-md text-label-md py-3 px-6 rounded-lg font-bold hover:brightness-110 active:scale-95 transition-all shadow-lg">
+          Enviar a otro cliente
+        </button>
+<button class="flex-1 bg-transparent border border-outline text-on-surface font-label-md text-label-md py-3 px-6 rounded-lg font-semibold hover:bg-surface-variant transition-all active:scale-95" onclick="window.location.reload()">
+          Volver al Dashboard
+        </button>
+</div>
+<!-- Bottom Progress Feedback (Micro-interaction) -->
+<div class="w-full mt-stack-lg">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sincronización de datos</span>
+<span class="font-label-sm text-label-sm text-primary" id="sync-percent">100%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="progress-bar-fill h-full bg-gradient-to-r from-primary to-primary/60 rounded-full"></div>
+</div>
+</div>
+</div>
+</main>
+<!-- Side Navigation (Suppressed for Success Screen focus but hinted for brand consistency) -->
+<div class="hidden">
+<!-- Using the JSON shared structure logic in the background if navigation was needed -->
+<!-- NavigationDrawer would be here -->
+</div>
+<!-- Footer Info -->
+<footer class="fixed bottom-0 w-full p-6 text-center z-10 pointer-events-none">
+<p class="font-label-sm text-label-sm text-on-surface-variant/40">FitNexus Pro • Secure Biometric Handshake v4.2</p>
+</footer>
+<script>
+    // Micro-interaction for the sync percentage
+    const syncText = document.getElementById('sync-percent');
+    let count = 0;
+    const interval = setInterval(() => {
+      count += 2;
+      if (count <= 100) {
+        syncText.innerText = count + '%';
+      } else {
+        clearInterval(interval);
+      }
+    }, 30);
+
+    // Subtle parallax effect on the success card
+    document.addEventListener('mousemove', (e) => {
+      const card = document.querySelector('.glass-card');
+      const xAxis = (window.innerWidth / 2 - e.pageX) / 50;
+      const yAxis = (window.innerHeight / 2 - e.pageY) / 50;
+      card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+    });
+  </script>
+</body></html>
